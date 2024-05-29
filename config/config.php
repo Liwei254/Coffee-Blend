@@ -18,5 +18,5 @@ $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch( PDOException $Exception ) {
     echo $Exception->getMessage();
 }
-?>
+
 
