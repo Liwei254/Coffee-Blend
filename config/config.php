@@ -18,8 +18,5 @@ $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch( PDOException $Exception ) {
     echo $Exception->getMessage();
 }
-// if($conn == true){
-//     echo "Connected";
-// } else{
-//     echo "Not Connected";
-// }
+?>
+
