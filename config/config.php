@@ -13,9 +13,10 @@ define("USER", "root");
 define("PASS", "");
 
 $conn = new PDO("mysql:host=".HOST.";dbname=".DBNAME, USER, PASS);
+$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-if($conn == true){
-    echo "Connected";
-} else{
-    echo "Not Connected";
-}
+// if($conn == true){
+//     echo "Connected";
+// } else{
+//     echo "Not Connected";
+// }
