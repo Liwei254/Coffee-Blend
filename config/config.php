@@ -1,5 +1,6 @@
 <?php
 
+try {
 //host
 deine("HOST", "localhost"); 
 
@@ -20,3 +21,4 @@ $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 // } else{
 //     echo "Not Connected";
 // }
+}
