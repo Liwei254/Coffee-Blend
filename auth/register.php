@@ -60,4 +60,4 @@
       </div>
     </section> <!-- .section -->
 
-    <?php require "../includes/footer.php"; ?>
+    <?php require "../includes/header.php"; ?>
