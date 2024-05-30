@@ -1,4 +1,4 @@
-<?php require "../includes/header.php"; ?>
+<?php require "../includes/footer.php"; ?>
 
     <section class="home-slider owl-carousel">
 
@@ -60,4 +60,4 @@
       </div>
     </section> <!-- .section -->
 
-    <?php require "../includes/header.php"; ?>
+    <?php require "../includes/footer.php"; ?>
