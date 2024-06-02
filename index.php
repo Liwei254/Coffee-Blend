@@ -376,7 +376,7 @@
 	              </blockquote>
 	              <div class="author d-flex mt-4">
 	                <div class="image mr-3 align-self-center">
-	                  <img src="images/person_1.jpg" alt="">
+	                  <img src="images/person_2.jpg" alt="">
 	                </div>
 	                <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
 	              </div>
@@ -438,7 +438,7 @@
 	    </div>
 	  </section>
 
-   
+<?php require "includes/footer.php"; ?>   
 
 		
 	
