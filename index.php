@@ -1,5 +1,4 @@
-
-    <!-- END nav -->
+<?php require "includes/header.php"; ?>
 
     <section class="home-slider owl-carousel">
       <div class="slider-item" style="background-image: url(images/bg_1.jpg);">
