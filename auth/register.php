@@ -1,4 +1,21 @@
 <?php require "../includes/header.php"; ?>
+<?php 
+
+
+
+if(isset($_POST['submit'])){
+
+if(empty($_POST['username']) OR empty($_POST['email']) || empty($_POST['password'])) {
+  echo "<script>alert('one or more inputs are empty')</script>";
+} else {
+  $username = $_POST['username'];
+  $email = $_POST['email'];
+  $password = password_hash($_POST['username'], PASSWORD_DEFAULT);
+  }
+}
+
+
+?>
 
     <section class="home-slider owl-carousel">
 
