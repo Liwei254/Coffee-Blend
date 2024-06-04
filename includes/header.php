@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+
+define("APPURL", "http://localhost/coffee-blend");
+
+?><!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Coffee - Free Bootstrap 4 Template by Colorlib</title>
@@ -9,11 +13,11 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>css/animate.css">
     
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
 
     <link rel="stylesheet" href="css/aos.css">
