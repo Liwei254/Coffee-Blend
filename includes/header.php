@@ -14,10 +14,10 @@ define("APPURL", "http://localhost/coffee-blend");
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 
     <link rel="stylesheet" href="<?php echo APPURL; ?>/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo APPURL; ?>css/animate.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/animate.css">
     
-    <link rel="stylesheet" href="<?php echo APPURL; ?>css/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?php echo APPURL; ?>css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
 
     <link rel="stylesheet" href="css/aos.css">
