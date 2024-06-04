@@ -18,19 +18,19 @@ define("APPURL", "http://localhost/coffee-blend");
     
     <link rel="stylesheet" href="<?php echo APPURL; ?>/css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php echo APPURL; ?>/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/<?php echo APPURL; ?>/css/magnific-popup.css">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/aos.css">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/ionicons.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/jquery.timepicker.css">
 
     
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/flaticon.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/icomoon.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/style.css">
   </head>
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
