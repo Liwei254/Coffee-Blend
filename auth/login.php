@@ -1,6 +1,21 @@
 <?php require "../includes/header.php"; ?>
 <?php require "../config/config.php"; ?>
+<?php
 
+
+
+if(isset($_POST['submit'])){
+
+  if(empty($_POST['username']) OR empty($_POST['email']) || empty($_POST['password'])) {
+    echo "<script>alert('one or more inputs are empty')</script>";
+  } else {
+
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+  } }
+
+?>
     <section class="home-slider owl-carousel">
 
       <div class="slider-item" style="background-image: url(<?php echo APPURL; ?>/images/bg_1.jpg);" data-stellar-background-ratio="0.5">
