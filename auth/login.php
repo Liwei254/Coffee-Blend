@@ -7,7 +7,7 @@
 if(isset($_POST['submit'])){
 
   if(empty($_POST['username']) OR empty($_POST['email']) || empty($_POST['password'])) {
-    echo "<script>alert('one or more inputs are empty')</script>";
+    echo "<script>alert('one or more inputs are empty');</script>";
   } else {
 
     $email = $_POST['email'];
@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
     //Write a query check for the email
     //changes made from login uders in tutorial at 10min 40seconds
 
-    $login = $conn->query("SELECT * FROM users WHERE email = :email");
+    $login = $conn->query("SELECT * FROM users WHERE email = email=''");
     $login->execute();
 
     $fetch = $login->fetch(PDO::FETCH_ASSOC);
