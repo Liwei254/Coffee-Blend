@@ -77,7 +77,7 @@ if(empty($_POST['username']) OR empty($_POST['email']) || empty($_POST['password
                 <div class="col-md-12">
                 	<div class="form-group mt-4">
 							<div class="radio">
-                 <button name="submit" type="submit" class="btn btn-primary py-3 px-4">Register</button>
+                 <button type="submit" name="submit" class="btn btn-primary py-3 px-4">Register</button>
 						    </div>
 					</div>
                 </div>

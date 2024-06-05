@@ -24,9 +24,8 @@ if(isset($_POST['submit'])){
 
     if($login->rowCount() > 0){
       if(password_verify($password, $fetch['password'])){
-        // $_SESSION['email'] = $fetch['email'];
-        // $_SESSION['username'] = $fetch['username'];
-        // $_SESSION['id'] = $fetch['id'];
+       
+        
         header("Location: " .APPURL. "");
       } else {
         echo "<script>alert('Invalid email or password');</script>";
@@ -79,7 +78,7 @@ if(isset($_POST['submit'])){
                 <div class="col-md-12">
                 	<div class="form-group mt-4">
 							<div class="radio">
-          <button name="submit" type="submit" class="btn btn-primary py-3 px-4">Login</button>
+          <button  type="submit" name="submit" class="btn btn-primary py-3 px-4">Login</button>
 						    </div>
 					</div>
                 </div>
