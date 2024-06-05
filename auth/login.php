@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
     //Write a query check for the email
     //changes made from login uders in tutorial at 10min 40seconds
 
-    $login = $conn->query("SELECT * FROM users WHERE email = $email=''");
+    $login = $conn->query("SELECT * FROM users WHERE email = '$email='");
     $login->execute();
 
     $fetch = $login->fetch(PDO::FETCH_ASSOC);
