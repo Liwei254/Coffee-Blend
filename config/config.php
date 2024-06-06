@@ -19,10 +19,5 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $Exception){
 
     echo $Exception->getMessage();
+    exit;
 }
-// Check connection
-// if ($conn == true){
-//     echo "Connected successfully";
-// } else {
-//     echo "Connection failed: ";
-// }
