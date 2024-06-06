@@ -2,40 +2,34 @@
 <?php require "../config/config.php"; ?>
 <?php
 
-
-
 if(isset($_POST['submit'])){
 
-  if(empty($_POST['username']) or empty($_POST['email']) or empty($_POST['password'])) {
+  if(empty($_POST['email']) || empty($_POST['password'])) {
     echo "<script>alert('one or more inputs are empty');</script>";
   } else {
 
     $email = $_POST['email'];
     $password = $_POST['password'];
 
+    // Prepare a query to check for the email to prevent SQL injection
+    $stmt = $conn->prepare("SELECT * FROM users WHERE email = :email");
+    $stmt->bindParam(':email', $email);
+    $stmt->execute();
 
-    //Write a query check for the email
-    //changes made from login uders in tutorial at 10min 40seconds
+    $fetch = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    $login = $conn->query("SELECT * FROM users WHERE email='$email'");
-    $login->execute();
-
-    $fetch = $login->fetch(PDO::FETCH_ASSOC);
-
-    if($login->rowCount() > 0){
+    if($stmt->rowCount() > 0){
       if(password_verify($password, $fetch['password'])){
-       
-        
-        header("Location: " .APPURL. "");
+        header("Location: " . APPURL . "");
+        exit;  // Prevent further execution after redirect
       } else {
         echo "<script>alert('Invalid email or password');</script>";
       }
     } else {
       echo "<script>alert('Invalid email or password');</script>";
     }
-
-  } }
-
+  }
+}
 ?>
     <section class="home-slider owl-carousel">
 
@@ -78,11 +72,10 @@ if(isset($_POST['submit'])){
                 <div class="col-md-12">
                 	<div class="form-group mt-4">
 							<div class="radio">
-          <button  type="submit" name="submit" class="btn btn-primary py-3 px-4">Login</button>
+          <button type="submit" name="submit" class="btn btn-primary py-3 px-4">Login</button>
 						    </div>
 					</div>
                 </div>
-
                
 	          </form><!-- END -->
           </div> <!-- .col-md-8 -->
