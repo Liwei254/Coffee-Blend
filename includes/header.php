@@ -48,7 +48,7 @@ define("APPURL", "http://localhost/coffee-blend");
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	         
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            <?php if(isset($_SESSION['username'])) ?>
+            <?php if(isset($_SESSION['username'])) : ?>
 	          <li class="nav-item cart"><a href="cart.html" class="nav-link"><span class="icon icon-shopping_cart"></span></a>
         
             <li class="nav-item dropdown">
@@ -62,10 +62,10 @@ define("APPURL", "http://localhost/coffee-blend");
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-
+        <?php else: ?>
 			  <li class="nav-item"><a href="login.html" class="nav-link">login</a></li>
 			  <li class="nav-item"><a href="register.html" class="nav-link">register</a></li>
-
+        <?php endif; ?>
 	        </ul>
 	      </div>
 		</div>
