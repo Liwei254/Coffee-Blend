@@ -63,7 +63,7 @@ define("APPURL", "http://localhost/coffee-blend");
           </ul>
         </li>
         <?php else: ?>
-			  <li class="nav-item"><a href="login.html" class="nav-link">login</a></li>
+			  <li class="nav-item"><a href="<?php echo APPURL; ?>/auth/login.php" class="nav-link">login</a></li>
 			  <li class="nav-item"><a href="register.html" class="nav-link">register</a></li>
         <?php endif; ?>
 	        </ul>
