@@ -23,6 +23,7 @@ if(isset($_POST['submit'])){
 
        $_SESSION['username'] = $fetch['username'];
        $_SESSION['email'] = $fetch['email'];
+       $_SESSION['user_id'] = $fetch['user_id'];
        
         header("Location: " . APPURL . "");
         exit;  // Prevent further execution after redirect
