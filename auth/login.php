@@ -20,6 +20,10 @@ if(isset($_POST['submit'])){
 
     if($stmt->rowCount() > 0){
       if(password_verify($password, $fetch['password'])){
+
+       $_SESSION['username'] = $fetch['username'];
+       $_SESSION['email'] = $fetch['email'];
+       
         header("Location: " . APPURL . "");
         exit;  // Prevent further execution after redirect
       } else {
