@@ -49,6 +49,19 @@ define("APPURL", "http://localhost/coffee-blend");
 	         
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	          <li class="nav-item cart"><a href="cart.html" class="nav-link"><span class="icon icon-shopping_cart"></span></a>
+        
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <?php echo $_SESSION['username']; ?>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
 			  <li class="nav-item"><a href="login.html" class="nav-link">login</a></li>
 			  <li class="nav-item"><a href="register.html" class="nav-link">register</a></li>
 
