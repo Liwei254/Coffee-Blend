@@ -3,7 +3,7 @@
 <?php 
 
 if(isset($_SESSION['username'])) {
-  header("Location: " . APPURL . "");
+  header("Location: " .APPURL. "");
 }
 
 if(isset($_POST['submit'])){
