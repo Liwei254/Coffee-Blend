@@ -19,7 +19,7 @@ define("APPURL", "http://localhost/coffee-blend");
     
     <link rel="stylesheet" href="<?php echo APPURL; ?>/css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php echo APPURL; ?>/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="<?php echo APPURL; ?>/<?php echo APPURL; ?>/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/magnific-popup.css">
 
     <link rel="stylesheet" href="<?php echo APPURL; ?>/css/aos.css">
 
