@@ -111,7 +111,7 @@
 		              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
 		            </div>
 		            <div class="form-group ml-md-4">
-		              <input type="submit" value="Appointment" class="btn btn-white py-3 px-4">
+		              <button type="submit" name="submit" class="btn btn-white py-3 px-4">Book a Table</button>
 		            </div>
 	    				</div>
 	    			</form>
