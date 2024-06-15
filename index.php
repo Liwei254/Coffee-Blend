@@ -80,20 +80,20 @@
 	    		</div>
 	    		<div class="book p-4">
 	    			<h3>Book a Table</h3>
-	    			<form action="#" class="appointment-form">
+	    			<form action="booking/book.php" method="POST" class="appointment-form">
 	    				<div class="d-md-flex">
 		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="First Name">
+		    					<input type="text" name="first_name"  class="form-control" placeholder="First Name">
 		    				</div>
 		    				<div class="form-group ml-md-4">
-		    					<input type="text" class="form-control" placeholder="Last Name">
+		    					<input type="text" name="last_name" class="form-control" placeholder="Last Name">
 		    				</div>
 	    				</div>
 	    				<div class="d-md-flex">
 		    				<div class="form-group">
 		    					<div class="input-wrap">
 		            		<div class="icon"><span class="ion-md-calendar"></span></div>
-		            		<input type="text" class="form-control appointment_date" placeholder="Date">
+		            		<input name="date" type="text" class="form-control appointment_date" placeholder="Date">
 	            		</div>
 		    				</div>
 		    				<div class="form-group ml-md-4">
